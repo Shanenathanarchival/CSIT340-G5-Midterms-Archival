@@ -1,4 +1,4 @@
-export default function Intro( author ) {
+export default function Intro( {author} ) {
   return (
     <header className="px-20 pt-8 text-center">
         <h2 className="text-7xl font-bold">Build pages faster.</h2>

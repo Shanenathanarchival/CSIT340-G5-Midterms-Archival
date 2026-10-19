@@ -58,7 +58,7 @@ export default function Hero() {
         </button>
       </div>
 
-      <Stats stars="1,234" downloads="5,678" issues="90" />
+      <Stats stars={stars} downloads={downloads} issues={issues} />
 
       <Contribute issues={issues} />
     </>

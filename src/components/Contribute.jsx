@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Contribute( issues ) {
+export default function Contribute( {issues} ) {
   const [contributers, setContributers] = useState(0);
 
   function handleContribute() {
@@ -29,7 +29,7 @@ export default function Contribute( issues ) {
                 <span className="font-bold"> {contributers}</span>
             </p>
             <p className="text-xl">Open issues
-                <span className="font-bold"> {Math.max(0, issues.issues - contributers)}</span>
+                <span className="font-bold"> {Math.max(0, issues - contributers)}</span>
             </p>
         </div>
         
