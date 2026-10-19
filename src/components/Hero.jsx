@@ -1,17 +1,16 @@
+import Stats from "./Stats";
+
 import Intro from "./Intro";
 
 export default function NavBar() {
   return (
     <>
-      <header className="px-20 pt-8 text-center">
-        <Intro author="Shane Nathan B. Archival" />
-      </header>
+      <Intro author="Shane Nathan B. Archival" />
 
       <div className="flex justify-center gap-4 py-6">
       </div>
 
-      <div className="flex justify-center gap-6 pb-8">
-      </div>
+      <Stats stars="1,234" downloads="5,678" issues="90" />
     </>
   );
 }
