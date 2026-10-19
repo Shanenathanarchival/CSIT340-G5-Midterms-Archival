@@ -1,6 +1,8 @@
 import Stats from "./Stats";
 import { useState } from "react";
 import Intro from "./Intro";
+import Contribute from "./Contribute";
+import setContributers from "./Contribute";
 
 export default function Hero() {
   const [stars, setStars] = useState(0);
@@ -23,12 +25,13 @@ export default function Hero() {
     setStars(0);
     setDownloads(0);
     setIssues(5);
+    setContributers(0);
   }
   return (
     <>
       <Intro author="Shane Nathan B. Archival" />
 
-            <div className="flex justify-center gap-4 py-6">
+    <div className="flex justify-center gap-4 py-6">
         <button
           className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
           onClick={handleStar}
@@ -56,6 +59,8 @@ export default function Hero() {
       </div>
 
       <Stats stars="1,234" downloads="5,678" issues="90" />
+
+      <Contribute issues={issues} />
     </>
   );
 }
