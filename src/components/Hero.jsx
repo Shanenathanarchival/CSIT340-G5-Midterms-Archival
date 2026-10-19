@@ -7,8 +7,10 @@ export default function NavBar() {
         <p className="mt-2 text-xl text-[#000000]">Made by Shane Nathan B. Archival</p>
       </header>
 
+      <div className="flex justify-center gap-4 py-6">
+      </div>
+
       <div className="flex justify-center gap-6 pb-8">
-        
       </div>
     </>
   );
