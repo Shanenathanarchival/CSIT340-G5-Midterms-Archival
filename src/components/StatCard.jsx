@@ -1,4 +1,4 @@
-export default function NavBar( {value, label} ) {
+export default function StatCard( {value, label} ) {
   return (
     
         <div className="w-48 rounded-xl bg-[#F3E6D5] py-4 text-center">

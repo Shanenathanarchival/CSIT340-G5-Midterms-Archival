@@ -1,6 +1,6 @@
 import StatCard from "./StatCard";
 
-export default function NavBar( { stars, downloads, issues } ) {
+export default function Stats( { stars, downloads, issues } ) {
   return (
     <div className="flex justify-center gap-6 pb-8">
         <StatCard value={stars} label="Stars" />

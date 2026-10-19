@@ -2,7 +2,7 @@ import Stats from "./Stats";
 
 import Intro from "./Intro";
 
-export default function NavBar() {
+export default function Hero() {
   return (
     <>
       <Intro author="Shane Nathan B. Archival" />
